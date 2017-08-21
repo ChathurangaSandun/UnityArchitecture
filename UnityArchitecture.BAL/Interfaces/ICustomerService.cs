@@ -9,6 +9,6 @@ namespace UnityArchitecture.BAL.Interfaces
 {
     public interface ICustomerService
     {
-        Customer GetCustomerById(int id);
+        Customer GetTop(int id);
     }
 }

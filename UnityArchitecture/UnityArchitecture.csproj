@@ -231,6 +231,10 @@
       <Project>{565318b7-7a32-4c1c-b836-13bda8334c10}</Project>
       <Name>UnityArchitecture.BAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\UnityArchitecture.DAL\UnityArchitecture.DAL.csproj">
+      <Project>{0969fb5e-4d34-4177-b64e-103d2ddac2b9}</Project>
+      <Name>UnityArchitecture.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UnityArchitecture.DomainModel\UnityArchitecture.DomainModel.csproj">
       <Project>{3db2c128-b144-49f1-a887-f208919bdacd}</Project>
       <Name>UnityArchitecture.DomainModel</Name>

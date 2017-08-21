@@ -21,7 +21,7 @@ namespace UnityArchitecture.Controllers
         // GET: Customer
         public ActionResult Index()
         {
-            Customer c = _customerService.GetCustomerById(1);
+            Customer c = _customerService.GetTop(1);
 
             return View();
         }
