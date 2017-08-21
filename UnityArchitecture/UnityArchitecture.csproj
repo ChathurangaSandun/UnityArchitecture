@@ -204,6 +204,16 @@
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnityArchitecture.BAL\UnityArchitecture.BAL.csproj">
+      <Project>{565318b7-7a32-4c1c-b836-13bda8334c10}</Project>
+      <Name>UnityArchitecture.BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityArchitecture.DomainModel\UnityArchitecture.DomainModel.csproj">
+      <Project>{3db2c128-b144-49f1-a887-f208919bdacd}</Project>
+      <Name>UnityArchitecture.DomainModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
