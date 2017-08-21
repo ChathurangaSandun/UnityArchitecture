@@ -48,20 +48,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnityDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UnityArchitecture.DomainModel\UnityArchitecture.DomainModel.csproj">
       <Project>{3db2c128-b144-49f1-a887-f208919bdacd}</Project>
       <Name>UnityArchitecture.DomainModel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UnityArchitecture.Migrations\UnityArchitecture.Migrations.csproj">
-      <Project>{697eff9f-acff-4c47-9e49-6594586dbcb0}</Project>
-      <Name>UnityArchitecture.Migrations</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Repository\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

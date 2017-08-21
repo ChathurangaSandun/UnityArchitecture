@@ -47,11 +47,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201708211937095_addcustomer_m1.cs" />
+    <Compile Include="Migrations\201708211937095_addcustomer_m1.Designer.cs">
+      <DependentUpon>201708211937095_addcustomer_m1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnityArchitecture.DAL\UnityArchitecture.DAL.csproj">
+      <Project>{0969fb5e-4d34-4177-b64e-103d2ddac2b9}</Project>
+      <Name>UnityArchitecture.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityArchitecture.DomainModel\UnityArchitecture.DomainModel.csproj">
+      <Project>{3db2c128-b144-49f1-a887-f208919bdacd}</Project>
+      <Name>UnityArchitecture.DomainModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201708211937095_addcustomer_m1.resx">
+      <DependentUpon>201708211937095_addcustomer_m1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
